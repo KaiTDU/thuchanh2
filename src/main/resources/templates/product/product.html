@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+	<h1>Product</h1>
+	<form th:action="@{/products/edit-product/{id}(id=${product.id})}" th:object="${product}" method="post">
+		<div class="form-group">
+			<label for="">Product code:</label> <input type="text"
+				th:field="*{code}" class="form-control" placeholder="Enter product code" id="">
+		</div>
+		<div class="form-group">
+			<label for="">Product description:</label> <input type="text"
+				th:field="*{description}" class="form-control" placeholder="Enter product description" id="">
+		</div>
+		<div class="form-group">
+			<label for="">Product price:</label> <input type="number"
+				th:field="*{price}" class="form-control" placeholder="Enter product price" id="">
+		</div>
+		<button type="submit" class="btn btn-primary">Update product</button>
+	</form>
+	<br>
+	<a th:href="@{/products}" class="btn btn-primary">View products</a>
+</body>
+</html>
+		
