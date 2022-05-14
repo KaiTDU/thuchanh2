@@ -22,8 +22,8 @@
 				<td th:text="${product.description}"></td>
 				<td th:text="${product.price} + ' VNĐ'"></td>
 				<td>
-					<a class="btn btn-info" th:href="@{/products/edit-product/{id}(id=${product.id})}">Edit</a>
-					<a class="btn btn-danger" th:href="@{/products/delete-product/{id}(id=${product.id})}">Delete</a>
+					<a class="btn btn-info" th:href="@{/products/edit-product/}">Edit</a>
+					<a class="btn btn-danger" th:href="@{/products/delete-product/}">Delete</a>
 				</td>
 			</tr>
 		</tbody>
