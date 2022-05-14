@@ -6,7 +6,8 @@ install: mvn install
 Khời tạo database theo sql/createmysql.txt
 run: mvn spring-boot:run
 
-Mô tả cách làm và đầu việc của từng bạn: 
+Mô tả cách làm và đầu việc của từng bạn:
+
 *)Lê Đại Thắng:  
       - Code ProductEntity : Sử dụng Spring data jpa để ánh xạ thực thể với database mysql
       - Code Service layer : Sử dụng Spring data Jpa để code các chức năng dịch vụ thao tác với dữ liệu CRUD (Thêm, Đọc, Sửa, Xóa)
